@@ -5,15 +5,18 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
-import org.apache.usergrid.android.sdk.UGClient;
+import com.getxinfo.app.util.AnalyticsHelper;
+
 
 public class MainActivity extends AppCompatActivity {
 
     private AppApplication application;
+
+    private static final String SCREEN_LABEL = "Home Page";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +35,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         application = (AppApplication)this.getApplication();
-        if(application.getClient() == null){
+        /*if(application.getClient() == null){
             UGClient client = new UGClient();
             application.setClient(client);
-        }
+        }*/
+        AnalyticsHelper.sendScreenView(SCREEN_LABEL);
     }
 
     @Override
@@ -54,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            AnalyticsHelper.sendScreenView(SCREEN_LABEL);
             return true;
         }
 

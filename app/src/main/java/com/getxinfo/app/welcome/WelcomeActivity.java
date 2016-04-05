@@ -25,6 +25,11 @@ public class WelcomeActivity extends AppCompatActivity{
     }
 
     public static boolean shouldDisplay(Context context) {
+        WelcomeActivityContent fragment = getCurrentFragment(context);
+        if (fragment == null) {
+            return false;
+        }
+
         return true;
     }
 

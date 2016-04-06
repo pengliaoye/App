@@ -14,4 +14,16 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="FrameworkRoot.Theme" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="Theme" parent="FrameworkRoot.Theme"></style>
+
+    <style name="Theme.IOSched.Base" parent="Theme"></style>
+
+    <style name="Theme.IOSched" parent="Theme.IOSched.Base" />
+
+    <style name="Theme.IOSched.Welcome" parent="Theme.IOSched">
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
 </resources>

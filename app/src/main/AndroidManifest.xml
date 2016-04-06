@@ -26,7 +26,8 @@
             android:name="io.fabric.ApiKey"
             android:value="52a70239882315d19170364daec800e86d420038" />
 
-        <activity android:name=".ui.BaseActivity"></activity>
+        <activity android:name=".welcome.WelcomeActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

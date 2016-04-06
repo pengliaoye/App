@@ -2,12 +2,14 @@ package com.getxinfo.app.welcome;
 
 import android.content.Context;
 
+import com.getxinfo.app.settings.SettingsUtils;
+
 /**
  * Created by pgy on 2016/4/1.
  */
 public class ConductFragment implements WelcomeActivity.WelcomeActivityContent{
     @Override
-    public void shouldDisplay(Context context) {
-
+    public boolean shouldDisplay(Context context) {
+        return !SettingsUtils.isConductAccepted(context);
     }
 }

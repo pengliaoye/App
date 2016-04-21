@@ -1,4 +1,48 @@
 <resources>
     <string name="app_name">App</string>
     <string name="action_settings">Settings</string>
+
+    <!-- Label on a button that the user clicks to accept a license agreement. -->
+    <string name="accept">Accept</string>
+
+    <!-- Label on a button that allows the user to cancel an operation before it starts. For
+example, this may be a button on a dialog that says "This will delete your data." -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Label on a button that is one possible answer to the question "Are you attending the
+conference in person in San Francisco or remotely via livestream?" -->
+    <string name="attending_in_person">In Person</string>
+
+    <!-- Label on a button that is one possible answer to the question "Are you attending the
+    conference in person in San Francisco or remotely via livestream?" -->
+    <string name="attending_remotely">Remotely</string>
+
+    <!-- Label on a button that the user clicks to decline something (for example, a license
+agreement). -->
+    <string name="decline">Decline</string>
+
+    <!-- Short text welcoming the user to the application -->
+    <string name="welcome_to_google_i_o_app">Welcome to the Google I/O app!</string>
+
+    <!-- Medium-length welcome text indicating the subsequent text is important legal information -->
+    <string name="welcome_text">Before we begin, here is some important legal information regarding your use of this app. This will only take a minute!</string>
+
+    <!-- Short text introducing the code of conduct for attendees coming in person -->
+    <string name="welcome_conduct_title">I/O Community Best Practices</string>
+
+    <!-- Short text asking if the user is attending Google I/O in person -->
+    <string name="welcome_attending">Attending in Person?</string>
+
+    <!-- Medium-length welcome text asking if the user is attending Google I/O in person -->
+    <string name="welcome_attending_text">Are you attending I/O remotely or in person in San Francisco?</string>
+
+    <!-- Short text asking them to select an account -->
+    <string name="welcome_select_account">Select an account</string>
+
+    <!-- Medium text asking to choose an account from a list -->
+    <string name="welcome_select_accoun_text">Please choose an account to use:</string>
+
+    <!-- A single button shown on informative popups, like EULA, open source licenses and About -->
+    <string name="ok">OK</string>
+
 </resources>

@@ -3,6 +3,7 @@
     package="com.getxinfo.app">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <application
         android:name=".AppApplication"
@@ -27,6 +28,7 @@
             android:value="52a70239882315d19170364daec800e86d420038" />
 
         <activity android:name=".welcome.WelcomeActivity"
+            android:theme="@style/Theme.IOSched.Welcome"
             android:exported="false"/>
     </application>
 

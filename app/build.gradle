@@ -42,6 +42,7 @@ dependencies {
     // Google Play services split client libs.
     compile "com.google.android.gms:play-services-analytics:${google_play_services_client_library_version}"
     compile "com.android.support:appcompat-v7:${android_support_lib_version}"
+    compile "com.android.support:cardview-v7:${android_support_lib_version}"
     compile "com.android.support:design:${android_support_lib_version}"
     compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
         transitive = true;

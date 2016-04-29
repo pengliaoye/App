@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.getxinfo.app.MainActivity;
+import com.getxinfo.app.explore.ExploreIOActivity;
 
 import static com.getxinfo.app.util.LogUtils.LOGD;
 import static com.getxinfo.app.util.LogUtils.makeLogTag;
@@ -146,7 +146,7 @@ public abstract class WelcomeFragment extends Fragment{
          */
         void doNext() {
             LOGD(TAG, "Proceeding to next activity");
-            Intent intent = new Intent(mActivity, MainActivity.class);
+            Intent intent = new Intent(mActivity, ExploreIOActivity.class);
             startActivity(intent);
             mActivity.finish();
         }

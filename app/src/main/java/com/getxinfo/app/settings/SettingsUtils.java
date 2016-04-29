@@ -21,6 +21,13 @@ public class SettingsUtils {
     public static final String PREF_ATTENDEE_AT_VENUE = "pref_attendee_at_venue" +
             CONFERENCE_YEAR_PREF_POSTFIX;
 
+    /**
+     * Boolean preference indicating whether the app has
+     * {@code com.google.samples.apps.iosched.ui.BaseActivity.performDataBootstrap installed} the
+     * {@code R.raw.bootstrap_data bootstrap data}.
+     */
+    public static final String PREF_DATA_BOOTSTRAP_DONE = "pref_data_bootstrap_done";
+
     public static final String PREF_TOS_ACCEPTED = "pref_tos_accepted" +
             CONFERENCE_YEAR_PREF_POSTFIX;
 
@@ -29,6 +36,11 @@ public class SettingsUtils {
 
     public static final String PREF_ANSWERED_LOCAL_OR_REMOTE = "pref_answered_local_or_remote" +
             CONFERENCE_YEAR_PREF_POSTFIX;
+
+    public static boolean isDataBootstrapDone(final Context context) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        return sp.getBoolean(PREF_DATA_BOOTSTRAP_DONE, false);
+    }
 
     /**
      * Set the attendee preference indicating whether they'll be attending Google I/O on site.

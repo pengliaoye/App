@@ -34,7 +34,7 @@ public class AccountFragment extends WelcomeFragment implements WelcomeActivity.
     public boolean shouldDisplay(Context context) {
         Account account = AccountUtils.getActiveAccount(context);
         if (account == null) {
-            return true;
+            return false;
         }
 
         return false;
